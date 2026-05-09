@@ -3,138 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jyoshi | Portfolio</title>
-  <meta name="description" content="Portfolio of Jyoshi, a Final Year CSE Student and Full Stack Developer.">
+  <title>Gunneri Jyoshitha | Portfolio</title>
+  <meta name="description" content="Portfolio of Gunneri Jyoshitha, a Computer Science student passionate about Full Stack & AI.">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Font Awesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="light-mode">
+<body class="dark-mode">
   <nav class="navbar">
-    <div class="logo">Jyoshi.</div>
+    <div class="logo">Jyoshitha.</div>
     <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
-      <i class="fas fa-moon"></i>
-    </button>
+    <a href="Jyoshi_Resume.pdf" class="btn resume-btn" download>Resume</a>
   </nav>
 
   <header class="hero" id="home">
     <div class="hero-content">
-      <h1 class="fade-in">Hello, I'm <span class="highlight">Jyoshi</span> 👋</h1>
-      <p class="subtitle fade-in">Final year CSE student passionate about Full Stack & AI</p>
+      <div class="status-pill fade-in">
+        <span class="pulse-dot"></span> Available for opportunities
+      </div>
+      <h1 class="fade-in">Hi, I'm <span class="text-gradient">Gunneri Jyoshitha</span></h1>
+      <p class="subtitle fade-in">Computer Science student passionate about Full Stack & AI.</p>
       <p class="tagline fade-in">"I build real-world web apps"</p>
       <div class="cta-buttons fade-in">
-        <a href="#projects" class="btn primary-btn">View My Work</a>
-        <a href="Jyoshi_Resume.pdf" class="btn secondary-btn" download><i class="fas fa-download"></i> Download Resume</a>
+        <a href="#projects" class="btn outline-btn">View Projects</a>
+        <a href="#contact" class="btn primary-btn">Get in touch</a>
       </div>
     </div>
   </header>
 
   <section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
+    <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
     <div class="about-container">
-      <p>I am a final-year Computer Science and Engineering student looking for a placement or developer role. My passion lies in building functional, impactful real-world applications by combining modern full-stack web technologies with artificial intelligence.</p>
+      <p>I am a final year B.Tech Computer Science and Engineering student focused on Web Development and Machine Learning. With a strong passion for problem-solving, I love building functional, impactful real-world applications by combining modern full-stack web technologies with artificial intelligence.</p>
     </div>
   </section>
 
-  <section id="skills" class="section bg-alt">
-    <h2 class="section-title">Skills</h2>
+  <section id="projects" class="section bg-alt">
+    <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>NovaSketch</h3>
+          <p>A collaborative whiteboard application that allows multiple users to draw, share, and brainstorm in real-time.</p>
+          <div class="tech-stack">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>WebSockets</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>TradeShield</h3>
+          <p>A secure trading platform built with robust cryptography mechanisms to ensure safe and authenticated transactions.</p>
+          <div class="tech-stack">
+            <span>Java</span>
+            <span>Cryptography</span>
+            <span>Spring Boot</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-content">
+          <h3>BioLunar</h3>
+          <p>An advanced NLP-based Medical Analysis tool that processes and extracts insights from complex medical literature.</p>
+          <div class="tech-stack">
+            <span>Python</span>
+            <span>spaCy</span>
+            <span>Machine Learning</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">My <span class="text-gradient">Toolkit</span></h2>
     <div class="skills-container">
       <div class="skill-category">
-        <h3>Languages</h3>
+        <h3><i class="fas fa-code"></i> Languages</h3>
         <div class="skill-tags">
           <span>Java</span>
           <span>Python</span>
+          <span>C++</span>
           <span>C</span>
         </div>
       </div>
       <div class="skill-category">
-        <h3>Web</h3>
+        <h3><i class="fas fa-laptop-code"></i> Web</h3>
         <div class="skill-tags">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
+          <span>React</span>
+          <span>Tailwind CSS</span>
         </div>
       </div>
       <div class="skill-category">
-        <h3>Tools</h3>
+        <h3><i class="fas fa-tools"></i> Tools</h3>
         <div class="skill-tags">
           <span>Git</span>
           <span>GitHub</span>
+          <span>VS Code</span>
+          <span>Figma</span>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-grid">
-      
-      <div class="project-card">
-        <div class="project-content">
-          <h3>AI-based Health Monitor</h3>
-          <p>An intelligent health monitoring system that leverages artificial intelligence to analyze user data and provide real-time health insights.</p>
-          <div class="tech-stack">
-            <span>Python</span>
-            <span>Machine Learning</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Cash Register App</h3>
-          <p>A functional and interactive cash register application to manage transactions, calculate change, and track sales efficiency.</p>
-          <div class="tech-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <div class="project-content">
-          <h3>Full-stack Web App</h3>
-          <p>An upcoming comprehensive web application focusing on seamless user experience, robust backend infrastructure, and scalable design.</p>
-          <div class="tech-stack">
-            <span>React</span>
-            <span>Node.js</span>
-            <span>MongoDB</span>
-          </div>
-          <div class="project-links">
-            <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View Code</a>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 
   <section id="contact" class="section bg-alt">
-    <h2 class="section-title">Get In Touch</h2>
+    <h2 class="section-title">Let's build something <span class="text-gradient">together</span></h2>
     <p class="contact-text">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+    
+    <div class="contact-info">
+      <a href="mailto:gjyoshitha26@gmail.com" class="btn email-btn"><i class="fas fa-envelope"></i> gjyoshitha26@gmail.com</a>
+      <p class="phone-text"><i class="fas fa-phone-alt"></i> +91 81858 16622</p>
+    </div>
+
     <div class="social-links">
-      <a href="mailto:your.email@example.com" class="social-icon" aria-label="Email"><i class="fas fa-envelope"></i></a>
       <a href="https://linkedin.com/in/yourprofile" class="social-icon" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/yourusername" class="social-icon" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/gjyoshitha26" class="social-icon" aria-label="GitHub" target="_blank"><i class="fab fa-github"></i></a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Jyoshi. Built with passion.</p>
+    <p>&copy; 2026 Gunneri Jyoshitha. Built with passion.</p>
   </footer>
 
   <script src="script.js"></script>

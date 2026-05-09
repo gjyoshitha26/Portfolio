@@ -1,37 +1,3 @@
-// Theme Toggle Logic
-const themeToggleBtn = document.getElementById('theme-toggle');
-const body = document.body;
-const icon = themeToggleBtn.querySelector('i');
-
-// Check for saved theme preference or system preference
-const savedTheme = localStorage.getItem('theme');
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-
-if (savedTheme === 'dark' || (!savedTheme && prefersDarkScheme.matches)) {
-  body.classList.add('dark-mode');
-  body.classList.remove('light-mode');
-  icon.classList.replace('fa-moon', 'fa-sun');
-}
-
-themeToggleBtn.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  body.classList.toggle('light-mode');
-  
-  // Add a little rotation animation to the icon
-  icon.style.transform = 'rotate(360deg)';
-  setTimeout(() => {
-    icon.style.transform = 'none';
-  }, 300);
-  
-  if (body.classList.contains('dark-mode')) {
-    icon.classList.replace('fa-moon', 'fa-sun');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    icon.classList.replace('fa-sun', 'fa-moon');
-    localStorage.setItem('theme', 'light');
-  }
-});
-
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -55,8 +21,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Simple Scroll Reveal Animation for cards
-const revealElements = document.querySelectorAll('.project-card, .skill-category');
+// Simple Scroll Reveal Animation for cards and elements
+const revealElements = document.querySelectorAll('.project-card, .skill-category, .about-container');
 
 const revealCallback = (entries, observer) => {
   entries.forEach(entry => {
